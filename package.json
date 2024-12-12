@@ -5,7 +5,7 @@
   "author": "Max Stoiber <contact@mxstbr.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsm rules.ts",
+    "build": "tsm rules.ts && cp karabiner.json $HOME/.config/nix/dotfiles/karabiner/karabiner.json",
     "watch": "nodemon --exec yarn build -e ts"
   },
   "devDependencies": {
